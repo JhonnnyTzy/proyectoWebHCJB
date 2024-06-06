@@ -7,43 +7,40 @@
     <title>Contact</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/Contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
      <!---------------------------------------------------------------------------------------navbar-------------------------------------------------------------------------------->
-     <nav class="navigation px-lg-5">
-        <nav class="navbar navbar-expand-lg navbar-dark py-3">
-            <div class="container-fluid">
-                <a class="navbar-brand text-uppercase" href="#">Favaro Hnos S.R.L.</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-lg-5">
-                        <li class="nav-item">
-                            <a class="nav-link"  href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="History.html">History</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="products.html">Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="noticias.html">Noticias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
-                        </li>
-                    </ul>
+        <nav class="navigation px-lg-5">
+            <nav class="navbar navbar-expand-lg navbar-dark py-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-uppercase" href="#">Favaro Hnos S.R.L.</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-lg-5">
+                            <li class="nav-item">
+                                <a class="nav-link"  href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="History.html">History</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" >Login</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+            </nav>
         </nav>
-    </nav>
         <!-----------------------------------------------------------------------------------------------BANNER DE IMAGENES-------------------------------------------------------------------------------------->
         <div class="banner py-5 mb-5">
             <div class="container ">
@@ -51,14 +48,13 @@
                 <h1 class=" card-title text-white ">Contact</h1>
             </div>
         </div>
-        <!----------------------------------------------------------------------------------------------TEELFONO---------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------TELEFONO---------------------------------------------------------------------------------->
         <main class="mb-4">
             <div class="container border-0 mb-5">
                 <div class="card-group">
                     <div class="card border-0">
                         <div class="icons text-center">
-                            <i class="fa-solid fa-phone text-center" style="color:  #2EB872;
-                            ;"></i>
+                            <i class="fa-solid fa-phone text-center" style="color:  #2EB872;"></i>
                         </div>
                       <div class="card-body text-center">
                         <p class="card-text">151215151</p>
@@ -96,7 +92,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12 col-12">
-                                    <form class="w-100">
+                                    <form id="contactForm" class="w-100">
                                         <div class="mb-3">
                                             <input type="text" id="name" class="form-control" placeholder="Your Name">
                                         </div>
@@ -104,26 +100,24 @@
                                             <input type="email" id="email" class="form-control" placeholder="Your Email">
                                         </div>
                                         <div class="mb-3">
-                                            <input type="text" id="name" class="form-control "placeholder="Your Number">
+                                            <input type="text" id="number" class="form-control" placeholder="Your Number">
                                         </div>
                                         <div class="mb-3">
-                                            <input type="text" id="name" class="form-control" placeholder="Your Submit">
+                                            <input type="text" id="subject" class="form-control" placeholder="Your Subject">
                                         </div>
                                         <div class="mb-3">
-                                            <textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="Message">
-        
-                                            </textarea>
+                                            <textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
                                         </div>
-                                        <button type="submit" class="button1 py-2y">
+                                        <button type="submit" class="button1 py-2">
                                             Enviar
                                         </button>
+                                        <div id="formMessage" class="mt-3"></div>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         <!----------------------------------------------------------FOOTER---------------------------------------->
         <footer class="footer">
@@ -196,7 +190,98 @@
                 </div>
             </div>
         </footer>
+        
         </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script>
+            const form1 = document.querySelector('form'); // Cambiado a form1
+     const nameInput1 = document.querySelector('#name');
+     const emailInput1 = document.querySelector('#email');
+     const numberInput1 = document.querySelector('#number');
+     const subjectInput1 = document.querySelector('#subject');
+     const messageInput1 = document.querySelector('#message');
+ 
+     // Funciones de validación para el primer formulario
+     function validateName1() {
+         const nameRegex = /^[a-zA-Z\s]+$/;
+         if (!nameRegex.test(nameInput1.value.trim())) {
+             nameInput1.classList.add('invalid');
+             nameInput1.classList.remove('valid');
+             return false;
+         } else {
+             nameInput1.classList.remove('invalid');
+             nameInput1.classList.add('valid');
+             return true;
+         }
+     }
+ 
+     function validateEmail1() {
+         const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+         if (!emailRegex.test(emailInput1.value.trim())) {
+             emailInput1.classList.add('invalid');
+             emailInput1.classList.remove('valid');
+             return false;
+         } else {
+             emailInput1.classList.remove('invalid');
+             emailInput1.classList.add('valid');
+             return true;
+         }
+     }
+ 
+     function validateNumber1() {
+         const numberRegex = /^[0-9]+$/;
+         if (!numberRegex.test(numberInput1.value.trim())) {
+             numberInput1.classList.add('invalid');
+             numberInput1.classList.remove('valid');
+             return false;
+         } else {
+             numberInput1.classList.remove('invalid');
+             numberInput1.classList.add('valid');
+             return true;
+         }
+     }
+ 
+     function validateSubject1() {
+         if (subjectInput1.value.trim() === '') {
+             subjectInput1.classList.add('invalid');
+             subjectInput1.classList.remove('valid');
+             return false;
+         } else {
+             subjectInput1.classList.remove('invalid');
+             subjectInput1.classList.add('valid');
+             return true;
+         }
+     }
+ 
+     function validateMessage1() {
+         if (messageInput1.value.trim() === '') {
+             messageInput1.classList.add('invalid');
+             messageInput1.classList.remove('valid');
+             return false;
+         } else {
+             messageInput1.classList.remove('invalid');
+             messageInput1.classList.add('valid');
+             return true;
+         }
+     }
+ 
+     // Evento submit para el primer formulario
+     form1.addEventListener('submit', (event) => {
+         event.preventDefault(); // Evitar el envío del formulario
+ 
+         const isNameValid = validateName1();
+         const isEmailValid = validateEmail1();
+         const isNumberValid = validateNumber1();
+         const isSubjectValid = validateSubject1();
+         const isMessageValid = validateMessage1();
+ 
+         if (isNameValid && isEmailValid && isNumberValid && isSubjectValid && isMessageValid) {
+             alert('¡Enviado correctamente!');
+             form1.reset(); // Restablecer los campos del formulario
+         } else {
+             alert('Por favor, corrija los campos marcados en rojo.');
+         }
+     });
+           </script>
 </body>
 </html>
