@@ -1,0 +1,110 @@
+:root {
+    --color-primary: #2EB872;
+    --color-light: #f8f9fa;
+    --color-dark: #343a40;
+    --color-black: #192021;
+}
+
+.navigation {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.card img {
+    max-height: 70vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner {
+    background-color: var(--color-dark);
+    width: 100%;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carrucel3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    height: 340px;
+}
+
+.nav-link::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: var(--color-primary);
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.card1 {
+    background-color: var(--color-primary);
+}
+
+.card-img-overlay {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+}
+
+.carousel-item img {
+    max-height: 80vh;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+}
+
+.carousel-inner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.footer-header {
+    background-color: var(--color-dark);
+}
+
+.footer-bottom {
+    background-color: var(--color-black);
+}
+
+/* Estilos adicionales para la página de contacto */
+.icons i {
+    font-size: 2rem;
+}
+
+form input,
+form textarea {
+    border: 1px solid var(--color-primary);
+}
+
+form button[type="submit"] {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #26a360;
+}
