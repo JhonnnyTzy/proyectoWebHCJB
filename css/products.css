@@ -41,37 +41,22 @@
 }
 
 .card img {
-    height: 180px;
+    height: 340px; /* Cambiado a 340px */
     object-fit: cover;
+}
+
+.banner,
+.banner2 { /* Se agrega el estilo para banner2 */
+    background-color: #343a40;
     width: 100%;
-}
-
-.card {
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card-body h4 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.card-body p {
-    font-size: 0.9rem;
-    color: #555;
-}
-
-.footer-header {
-    background-color: var(--color-dark);
-}
-
-.footer-bottom {
-    background-color: var(--color-black);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/amazonia.jpg); /* Se actualiza la URL de la imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 500px; /* Ajustado el valor de altura mínima */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cards-container {
@@ -82,28 +67,10 @@
     padding: 20px;
 }
 
-.button1 {
-    background-color: var(--color-primary);
-    color: var(--color-light);
-    border: none;
-    border-radius: 5px;
-    height: 38px;
+.footer-header {
+    background-color: var(--color-dark);
 }
 
-.banner {
-    background-color: #343a40;
-    width: 100%;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/banner1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.green-container {
-    background-color: var(--color-primary);
-}
-
-.contact-container {
-    width: 100%;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/form_contact.jpg);
+.footer-bottom {
+    background-color: var(--color-black);
 }
